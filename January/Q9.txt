@@ -1,0 +1,25 @@
+9) Explain Producer-Consumer problem -
+
+The Producer-Consumer problem is a classic problem this is used for multi-process synchronization i.e. synchronization between more than one processes.
+
+In the producer-consumer problem, there is one Producer that is producing something and there is one Consumer that is consuming the products produced by the Producer. The producers and consumers share the same memory buffer that is of fixed-size.
+
+The job of the Producer is to generate the data, put it into the buffer, and again start generating data. While the job of the Consumer is to consume the data from the buffer.
+
+
+What's the problem here?
+The following are the problems that might occur in the Producer-Consumer:
+
+The producer should produce data only when the buffer is not full. If the buffer is full, then the producer shouldn't be allowed to put any data into the buffer.
+The consumer should consume data only when the buffer is not empty. If the buffer is empty, then the consumer shouldn't be allowed to take any data from the buffer.
+The producer and consumer should not access the buffer at the same time.
+
+
+What's the solution?
+The above three problems can be solved with the help of semaphores(learn more about semaphores from here).
+
+In the producer-consumer problem, we use three semaphore variables:
+
+Semaphore S: This semaphore variable is used to achieve mutual exclusion between processes. By using this variable, either Producer or Consumer will be allowed to use or access the shared buffer at a particular time. This variable is set to 1 initially.
+Semaphore E: This semaphore variable is used to define the empty space in the buffer. Initially, it is set to the whole space of the buffer i.e. "n" because the buffer is initially empty.
+Semaphore F: This semaphore variable is used to define the space that is filled by the producer. Initially, it is set to "0" because there is no space filled by the producer initially.

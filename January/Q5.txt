@@ -1,0 +1,36 @@
+5) What is HTTP? Differentiate between HTTP and TCP. Differentiate between GET,
+POST, PUT and PATCH.
+
+---What is HTTP?---
+
+HTTP is a Hypertext Transfer Protocol. HTTP is a protocol which fetches resources such as HTML documents. It is used for exchanging data on the Web and is a client-server protocol which means requests are initiated by the recipient usually the Web browser.
+The controls from the client-side delivered in a request message into the webserver. The web server sends the requested content at a response message. The HTTP doesn’t provide any security and makes use of SSL (Secure Socket layer) to club security in its communication.
+
+
+---Differentiate between HTTP and TCP---
+
+1.HTTP is a Hypertext Transfer Protocol, whereas TCP full form is Transmission Control Protocol.
+2.HTTP is utilized to access websites, while TCP is a session establishment protocol between client and server.
+3.HTTP uses port 80 and TCP uses no port.
+4.HTTP doesn’t need authentication, whereas, TCP uses the TCP-AO.
+5.HTTP is Stateless but not session less. In contrast, TCP is a Connection-Oriented Protocol.
+6.HTTP is a One-way communication system, while on the other hand, TCP is a 3-Way Handshake (SYN, SYN-ACK, ACK).
+7.In case you’re using HTTP, HTTP appears in the URL of the site, and if you’re using TCP, TCP appears in IP.
+8.HTTP establishes data link communication only but TCP establishes session connection.
+9.HTTP is useful for transfer of smaller documents like webpages, on the other hand, TCP is useful to setup connection for data transfer.
+10.HTTP is faster in comparison to TCP, which is slower
+
+
+---Differentiate between GET, POST, PUT and PATCH.---
+
+1) GET:
+GET is the simplest type of HTTP request method; the one that browsers use each time you click a link or type a URL into the address bar. It instructs the server to transmit the data identified by the URL to the client. Data should never be modified on the server side as a result of a GET request. In this sense, a GET request is read-only.
+
+2) POST:
+The POST verb is mostly utilized to create new resources. In particular, it’s used to create subordinate resources. That is, subordinate to some other (e.g. parent) resource.
+
+3) PUT:
+PUT is most-often utilized for update capabilities, PUT-ing to a known resource URI with the request body containing the newly-updated representation of the original resource.
+
+PATCH:
+Patch request says that we would only send the data that we need to modify without modifying or effecting other parts of the data. Ex: if we need to update only the first name, we pass only the first name.

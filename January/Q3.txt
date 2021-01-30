@@ -1,0 +1,7 @@
+3) Differentiate between RPC and REST
+
+REST is best described to work with the resources, where as RPC is more about the actions.
+
+REST stands for Representational State Transfer. It is a simple way to organize interactions between independent systems. RESTful applications commonly use HTTP requests to post data (create and/or update), read data (e.g., make queries), and delete data. Thus, REST can use HTTP for all four CRUD (Create/Read/Update/Delete) operations.
+
+RPC is basically used to communicate across the different modules to serve user requests. e.g. In openstack like how nova, glance and neutron work together when booting a virtual machine.

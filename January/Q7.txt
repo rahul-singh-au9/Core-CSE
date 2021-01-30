@@ -1,0 +1,21 @@
+7) Explain CDN and HOW it works. Does it use some caching technique?
+
+---CDN---
+
+A CDN (Content Delivery Network) is a highly-distributed platform of servers that helps minimize delays in loading web page content by reducing the physical distance between the server and the user. This helps users around the world view the same high-quality content without slow loading times.
+
+---How does a CDN work?---
+
+Over half of the internet’s traffic is served by a content delivery network (CDN). The goal of the CDN is to reduce latency – the delay between submitting a request for a web page and the web page fully loading on your device – by reducing the physical distance that the request has to travel.
+
+For example, a US visitor wishing to view content which originates at a UK-based server will experience poor loading times if this request has to travel across the Atlantic.
+
+To combat this, CDNs store a cached version of your website content in multiple geographical locations around the world, which are known as “points of presence” (PoPs). These PoPs will contain their own caching servers and will be responsible for delivering that content in the user’s location.
+
+User-agents, which are essentially devices running web browsers, make requests for content needed to render web pages such as HTML, images, CSS, and JavaScript files. For most CDNs, each request for content will cause the end user to be mapped to an optimally-located CDN server and the server will respond with the cached (pre-saved) version of the requested files. If it fails to locate the files, it will look for the content on the other servers in the CDN platform and send the response to the end user. However, when content is unavailable or stale, the CDN will act as a request proxy to the origin server and store the fetched content to serve future requests.
+
+Although the delivery of website content is a common use case for CDNs, it is not the only type of content that a CDN can deliver. In fact, CDNs deliver an incredible variety of content that includes: 4K and HD-quality video; audio streams; software downloads such as apps, games, and OS updates; data records that contain medical and financial information; and much more. Potentially any data that can be digitized can be delivered through a CDN.
+
+
+---Does it use some caching technique?---
+For caching, a CDN will reduce the load on an application origin and improve the experience of the requestor by delivering a local copy of the content from a nearby cache edge, or Point of Presence (PoP).

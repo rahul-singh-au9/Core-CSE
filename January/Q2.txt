@@ -1,0 +1,19 @@
+2.)  What is Caching and what are the different types of cache. What are the different ways
+to update cache?
+
+Caching is the process of storing data in the cache. The cache is a temporary storage area relatively small in size with faster access time. Whenever your application has to read data it should first try to retrieve the data from the cache. Only if it’s not found in the cache then it should try to get the data from the data store. Caching improves latency and can reduce the load on your servers and databases.
+
+
+---types of cache---
+1.Web Caching (Browser/Proxy/Gateway)
+2.Data Caching
+3.Application/Output Caching
+4.Distributed Caching
+
+
+---What are the different ways to update cache?---
+There are two different ways in which cache can be written one is the Write through method and the other is the write back method.
+
+- Write through method: Considered to be the simplest this method involves the updating of the main memory corresponding to every write operation. With this the cache memory is also updated in parallel in case it also contains the word specified at the address. The primary advantage of this method is data integrity, the primary and the cache memory both contain the same data.
+
+- Write back method: In this method only the location in the cache is updated. Whenever such an update occurs a flag is set which makes sure that in case the word is removed from the cache the correct copy is saved to the main memory. This approach is usually taken when a word is constantly updated at frequent intervals.

@@ -1,0 +1,23 @@
+6) Explain How DNS works
+
+The Domain Name System resolves the names of internet sites with their underlying IP addresses adding efficiency and even security in the process.
+
+
+---How DNS servers work---
+Step 1: Requesting Website Information
+Let’s visit a website by typing a domain name into a web browser. Our computer will start resolving the hostname, such as www.liquidweb.com. Our computer will then look for the IP address associated with the domain name in its local DNS cache. This cache stores this information that our computer has recently saved.  If it is present locally, then the website will be displayed. If our computer does not have the information, it will perform a DNS query to retrieve the correct information.
+
+Step 2: Contact the Recursive DNS Servers
+If the information is not in your computer’s local cache, then it will query another server. Recursive DNS servers have their local cache, much like your computer. Many ISP’s use the same recursive DNS servers, it’s possible that common domain name is already in its cache. If the domain is cached, the query will end here and the website displayed to the user.
+
+Step 3: Query the Authoritative DNS Servers
+If a recursive DNS server or servers do not have information stored in its cache memory, it looks elsewhere. The query then continues up the chain of authoritative DNS servers. The search will continue until it finds a nameserver for the domain. These authoritative name servers are responsible for storing these records for their respective domain names.
+
+Step 4: Access the DNS Record
+To locate the IP address for liquidweb.com, we will query the authoritative name server for the address record (A record). A Recursive DNS server accesses the A record for liquidweb.com from the authoritative name servers. It then stores the record in its local cache. If another query requests the A record for liquidweb.com, the recursive server will have the answer. All DNS records have a time-to-live value, which shows when a record will expire. After some time has passed, the recursive DNS server will ask for an updated copy of the records.
+
+Step 5: Final DNS Step
+The Recursive DNS server has the information and returns the A record to your computer. Our computer then stores the record in its local cache. It reads the IP address from the DNS record and passed it to our browser. The web browser will connect to the web server associated with the A records IP and display the website.
+
+The entire lookup process, from start to finish, takes only milliseconds to complete. For a better understanding, let’s break down the components that make up the lookup process.
+
