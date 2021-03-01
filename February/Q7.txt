@@ -1,0 +1,7 @@
+Question 7: Explain Consistent Hashing in brief.
+--------------------------------------------------
+
+Consistent Hashing
+Consistent hashing solves the problem of rehashing by providing a distribution scheme which does not directly depend on the number of servers.
+Consistent Hashing is a distributed hashing scheme that operates independently of the number of servers or objects in a distributed hash table by assigning them a position on an abstract circle, or hash ring. This allows servers and objects to scale without affecting the overall system.
+Suppose our hash function output range in between zero to 2**32 or INT_MAX, then this range is mapped onto the hash ring so that values are wrapped around. All keys and servers are hashed using the same hash function and placed on the edge of the circle. To find out which server to ask for a given key or store a given key, we need to first locate the key on the circle and move in a clockwise direction until we find a server.

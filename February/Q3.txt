@@ -1,0 +1,15 @@
+Question 3: What is Private IP Address ?
+---------------------------------------
+Private IP address of a system is the IP address which is used to communicate within the same network. Using private IP data or information can be sent or received within the same network.
+
+1. its scope is local.
+2. It is used to communicate within the network.
+3. Private IP addresses of the systems connected in a network differ in a uniform manner.
+4. It works only in LAN.
+5. It is used to load network operating system.
+6. It is available in free of cost.
+7. Private IP can be known by entering “ipconfig” on command prompt.
+8. Range:
+10.0.0.0 – 10.255.255.255, 
+172.16.0.0 – 172.31.255.255, 
+192.168.0.0 – 192.168.255.255

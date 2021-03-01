@@ -1,0 +1,11 @@
+Question 1: What is ARP ? Explain in brief
+--------------------------------------------------
+
+Address Resolution Protocol (ARP) is an important protocol of the network layer in the OSI model, which helps find the MAC (Media Access Control) address given the system's IP address. The ARP's main task is to convert the 32-bit IP address (for IPv4) to a 48-bit MAC address.
+
+This protocol is mostly used to determine the hardware (MAC) address of a device from an IP address. It is also used when one device wants to communicate with some other device on a local network. The full form of ARP is Address Resolution Protocol.
+
+
+How Address Resolution Protocol (ARP) works?
+
+All OS in an IPv4 network keep an ARP cache. When the host requests a MAC address to send a packet to another host in the LAN, it checks its ARP cache to check that the MAC address translation already presents.

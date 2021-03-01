@@ -1,0 +1,7 @@
+Question 5: Explain Swap Memory
+-----------------------------------
+A Swap Memory is a space in the Hard Disk of your computer that Operating Systems will use to put the info that is actually on the RAM to free it for another application.
+
+This should be done when the system needs memory for a new process and there is none, so we can see that if our system has plenty of RAM it will maybe need no SWAP memory.
+
+To find out where Swap space (or virtual memory) you can go to Task Manger (CTRL+ALT+DEL) and turn on from VIEW -> COLUMNS -> VIRTUAL MEMORY. Now just calculate the difference between memory usage and virtual memory
