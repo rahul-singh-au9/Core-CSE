@@ -1,0 +1,13 @@
+QUESTION-3. Construct a binary tree by using postorder and inorder sequences given below.
+Inorder: N, M, P, O, Q
+Postorder: N, P, Q, O,
+
+                               M
+                             /   \
+                            N     O
+                                /  \
+                               P    Q
+
+
+Root node of tree is the last visiting node in Postorder traversal. Thus, Root Node = ‘M’.
+The second last node in postorder traversal is O. Thus, node P becomes left child of node O and node Q becomes right child of node Q. Thus, the final tree is:
